@@ -12,6 +12,7 @@
 		83A6BDF72B348F420012D103 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A6BDF62B348F420012D103 /* ContentView.swift */; };
 		83A6BDF92B348F440012D103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A6BDF82B348F440012D103 /* Assets.xcassets */; };
 		83A6BDFC2B348F440012D103 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A6BDFB2B348F440012D103 /* Preview Assets.xcassets */; };
+		83A6BE052B34930F0012D103 /* SideMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A6BE042B34930F0012D103 /* SideMenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		83A6BDF82B348F440012D103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83A6BDFB2B348F440012D103 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		83A6BDFD2B348F440012D103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83A6BE042B34930F0012D103 /* SideMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		83A6BDEF2B348F420012D103 /* VisionOsMusic */ = {
 			isa = PBXGroup;
 			children = (
+				83A6BE032B3493060012D103 /* Models */,
 				83A6BDF42B348F420012D103 /* VisionOsMusicApp.swift */,
 				83A6BDF62B348F420012D103 /* ContentView.swift */,
 				83A6BDF82B348F440012D103 /* Assets.xcassets */,
@@ -79,6 +82,14 @@
 				83A6BDFB2B348F440012D103 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		83A6BE032B3493060012D103 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83A6BE042B34930F0012D103 /* SideMenuItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +167,7 @@
 			files = (
 				83A6BDF72B348F420012D103 /* ContentView.swift in Sources */,
 				83A6BDF52B348F420012D103 /* VisionOsMusicApp.swift in Sources */,
+				83A6BE052B34930F0012D103 /* SideMenuItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
