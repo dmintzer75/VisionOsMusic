@@ -11,36 +11,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationSplitView {
-            List(sideMenuItems) { item in
-                NavigationLink(value: item.self) {
-                    Label(item.title, systemImage: item.icon)
-                        .foregroundStyle(.primary)
-                }.navigationDestination(for: SideMenuItem.self) { _ in
-                    // Menu item view
-                }
-            }.toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    VStack(alignment: .leading) {
-                        Text("Library")
-                            .font(.largeTitle)
-                        Text("All Music")
-                            .foregroundStyle(.tertiary)
-                    }
-                }
-                ToolbarItem {
-                    Button {} label: {
-                        Image(systemName: "ellipsis")
-                    }
-                    .clipShape(Circle())
-                }
+        TabView {
+            NavigationSplitView {
+                SideBarView()
+            } detail: {
+                // Album View
+                AlbumsView()
             }
-        } detail: {
-            // Album View
+            .tabItem { Label("Browse", systemImage: "music.note") }.tag(0)
+
+            Text("Favorites")
+                .tabItem { Label("Favorites", systemImage: "heart.fill") }.tag(1)
+            
+            Text("Playlist")
+                .tabItem { Label("Playlist", systemImage: "play.square.stack") }.tag(1)
         }
     }
 }
 
 #Preview(windowStyle: .automatic) {
-    ContentView()
+    NavigationStack {
+        ContentView()
+    }
 }
